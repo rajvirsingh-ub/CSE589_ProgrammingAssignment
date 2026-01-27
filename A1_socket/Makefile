@@ -1,7 +1,5 @@
-CC ?= cc
-CFLAGS ?= -Wall -Wextra -O2 -std=c11
-
-.PHONY: all clean
+CC = cc
+CFLAGS = -Wall -Wextra -O2
 
 all: client server
 

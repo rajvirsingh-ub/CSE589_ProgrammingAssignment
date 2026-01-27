@@ -1,5 +1,5 @@
 #!/bin/sh
-# Minimal client/server test harness with readable output.
+# Minimal client/server test harness with readable output for students.
 # This script runs 5 tests against the C client/server pair:
 # 1) Short text message end-to-end.
 # 2) Long alphanumeric text payload (large input handling).
@@ -145,7 +145,7 @@ run_client() {
 }
 
 summarize_test() {
-    # Show result + concise diagnostics to help debug quickly.
+    # Show result + concise diagnostics to help students debug quickly.
     LABEL="$1"
     EXPECTED="$2"
     ACTUAL="$3"

@@ -32,12 +32,13 @@ int main(int argc, char *argv[]) {
 
     // TODO: Accept clients in an infinite loop.
     //   - For each client, read in chunks until EOF.
-    //   - Write received bytes to stdout (handle partial writes).
-    //   - Close the client socket.
+    //   - For each chunk, write those *exact bytes* to stdout.
+    //     Use write(STDOUT_FILENO, ...) in a loop to handle partial writes.
+    //   - Do NOT use printf/fputs or add separators/newlines/prefixes.
+    //   - The test harness compares server stdout byte-for-byte with client input.
     // TODO: Handle EINTR and other error cases as specified.
 
     // TODO: Close the listen socket before exiting.
 
-    printf("This is the server skeleton. Fill in the TODOs.\n");
     return 0;
 }
